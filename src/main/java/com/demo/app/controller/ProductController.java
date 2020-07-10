@@ -2,10 +2,7 @@ package com.demo.app.controller;
 
 import com.demo.app.dto.ProductResponse;
 import com.demo.app.service.ProductService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.websocket.server.PathParam;
 import java.util.List;
@@ -31,7 +28,7 @@ public class ProductController {
     }
 
     @GetMapping
-    public List<ProductResponse> getByBrand(@PathParam("brand") String brand) {
+    public List<ProductResponse> getByBrand(@RequestParam("brand") String brand) {
         return productService.getByBrand(brand);
     }
 }
