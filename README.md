@@ -2,7 +2,7 @@
 ###Build and run
 * [Install JDK 11](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 * [Install Maven](https://maven.apache.org/install.html)
-* [Install Docker](https://docs.docker.com/get-docker/)
+* [Install Docker](https://docs.docker.com/compose/install/)
 
 in root folder run: 
 
